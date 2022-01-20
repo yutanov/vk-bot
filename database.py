@@ -5,11 +5,7 @@ from psycopg2 import Error
 import itertools
 
 try:
-    connection = psycopg2.connect(user="alex",
-                                  password="Peaks",
-                                  host="127.0.0.1",
-                                  port="5432",
-                                  database="vk-bot")
+    connection = psycopg2.connect() # connection settings
 
     cursor = connection.cursor()
 

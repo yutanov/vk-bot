@@ -25,9 +25,9 @@ goods_cat1 = database.cat1
 goods_cat2 = database.cat2
 goods_cat3 = database.cat3
 items = [
-goods_cat1,
-goods_cat2,
-goods_cat3,
+    goods_cat1,
+    goods_cat2,
+    goods_cat3,
 ]
 
 list_of_goods = list(itertools.chain(*items))
@@ -57,7 +57,7 @@ async def menu(message: Message):
     )
 
 
-@vk.on.message(text = cat)
+@vk.on.message(text=cat)
 async def menu(message: Message):
     msg = message.text
     i = cat.index(msg)
@@ -76,7 +76,7 @@ async def menu(message: Message):
     )
 
 
-@vk.on.message(text = list_of_goods)
+@vk.on.message(text=list_of_goods)
 async def menu(message: Message):
     msg = message.text
     i = list_of_goods.index(msg)

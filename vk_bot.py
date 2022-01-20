@@ -6,8 +6,8 @@ from vkbottle.bot import Bot, Message
 from vkbottle import Keyboard, KeyboardButtonColor, Text
 
 # connection to vk
-group_id = '210214164'
-secret = '019ca3c4c68cfb8b99d9ad0e87cc772c3bb8dfb7230e3cc279e0fc5a25236a5676af5750969b78eeaaf2d'
+group_id = '' # enter group id
+secret = '' # enter key
 
 bot_token = secret
 bot_group_id = group_id
